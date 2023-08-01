@@ -2,7 +2,7 @@
 
 The given task is focused on a better understanding of memory allocation in the operating system. It involves implementing a simplified version of a dynamic memory manager for a user process.
 
-In simple model environment, there is no heap manager (it is disconnected in the testing environment on Progtest). Therefore, functions like malloc, free, ..., as well as new and delete operators do not exist. Task is to implement their simplified equivalents.
+In simple model environment, there is no heap manager. Therefore, functions like malloc, free, ..., as well as new and delete operators do not exist. Task is to implement their simplified equivalents.
 
 Interface will work with a block of allocated memory of a specified size (you will be provided with a pointer to an existing memory block and information about its size during initialization). The given memory block will be contiguous and relatively large (ranging from a few to hundreds of MiB). Your implemented memory subsystem will be responsible for managing this given memory block. It should enable the utilization of smaller parts of the block according to incoming requests, keep track of allocated and unused parts of the given memory block, allow for block allocation, block deallocation, and merging of freed blocks into contiguous chunks.
 
